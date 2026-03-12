@@ -10,6 +10,12 @@ Usa fórmulas físicas para simular distintos fenómenos. De momento solo se pue
 
 ---
 
+## Dependencias
+
+Este proyecto usa los plugins Lombok, Maven y JUnit.
+
+---
+
 ## Problemas conocidos
 
 - Se producen distintas excepciones cuando los datos introducidos no tienen sentido. Será arreglado en el futuro cuando limpie un poco más el código, de momento solo quiero que funcione.
