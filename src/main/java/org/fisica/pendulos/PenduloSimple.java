@@ -56,7 +56,10 @@ public class PenduloSimple { //pendulo simple sin rozamiento
             // momento angular
             double L_ang = mass * length * length * angularVelocity;
 
-            System.out.printf("t=%.05fs  θ=%.4f rad  ω=%.4f rad/s  L=%.4f kg·m²/s\n", t, angle, angularVelocity, L_ang);
+            log.info(String.format(
+                    "t=%.05fs  θ=%.4f rad  ω=%.4f rad/s  L=%.4f kg·m²/s",
+                    t, angle, angularVelocity, L_ang
+            ));
         }
 
 
