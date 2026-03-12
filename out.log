@@ -1,0 +1,88 @@
+2026-03-12 08:32:25 INFO  org.fisica.caidaLibre.CaidaLibre:12 - Introduce la altura del objeto (por ejemplo, si pones '100', se tomará que cae desde 100m a 0m)
+2026-03-12 08:32:35 INFO  org.fisica.caidaLibre.CaidaLibre:16 - Introduce la velocidad inicial (por ejemplo, si pones -5 se tomará como 5m/s hacia abajo. Si pones 0 se toma como caída libre. Si pones 5 se tomará como lanzamiento hacia arriba)
+2026-03-12 08:32:39 INFO  org.fisica.caidaLibre.CaidaLibre:21 - La gravedad se tomará como 9,80665m/s². ¿Quieres cambiarlo? [s/n]
+2026-03-12 08:32:42 INFO  org.fisica.caidaLibre.CaidaLibre:46 - La velocidad final del objeto es de: 44.568262250170804m/s.
+2026-03-12 08:32:42 INFO  org.fisica.caidaLibre.CaidaLibre:50 - El tiempo de caída es de: 5.054556066564097s.
+2026-03-12 08:36:38 INFO  org.fisica.caidaLibre.CaidaLibre:12 - Introduce la altura del objeto (por ejemplo, si pones '100', se tomará que cae desde 100m a 0m)
+2026-03-12 08:36:45 INFO  org.fisica.caidaLibre.CaidaLibre:16 - Introduce la velocidad inicial (por ejemplo, si pones -5 se tomará como 5m/s hacia abajo. Si pones 0 se toma como caída libre. Si pones 5 se tomará como lanzamiento hacia arriba)
+2026-03-12 08:36:49 INFO  org.fisica.caidaLibre.CaidaLibre:21 - La gravedad se tomará como 9,80665m/s². ¿Quieres cambiarlo? [s/n]
+2026-03-12 08:36:51 INFO  org.fisica.caidaLibre.CaidaLibre:50 - La velocidad final del objeto es de: NaNm/s.
+2026-03-12 08:36:51 INFO  org.fisica.caidaLibre.CaidaLibre:54 - El tiempo de caída es de: NaNs.
+2026-03-12 08:38:09 INFO  org.fisica.caidaLibre.CaidaLibre:12 - Introduce la altura del objeto (por ejemplo, si pones '100', se tomará que cae desde 100m a 0m)
+2026-03-12 08:38:12 INFO  org.fisica.caidaLibre.CaidaLibre:16 - Introduce la velocidad inicial (por ejemplo, si pones -5 se tomará como 5m/s hacia abajo. Si pones 0 se toma como caída libre. Si pones 5 se tomará como lanzamiento hacia arriba)
+2026-03-12 08:38:14 INFO  org.fisica.caidaLibre.CaidaLibre:21 - La gravedad se tomará como 9,80665m/s². ¿Quieres cambiarlo? [s/n]
+2026-03-12 08:38:16 INFO  org.fisica.caidaLibre.CaidaLibre:46 - La velocidad final del objeto es de: -44.568262250170804m/s.
+2026-03-12 08:38:16 INFO  org.fisica.caidaLibre.CaidaLibre:50 - El tiempo de caída es de: 4.03483985358617s.
+2026-03-12 08:38:34 INFO  org.fisica.caidaLibre.CaidaLibre:12 - Introduce la altura del objeto (por ejemplo, si pones '100', se tomará que cae desde 100m a 0m)
+2026-03-12 08:38:37 INFO  org.fisica.caidaLibre.CaidaLibre:16 - Introduce la velocidad inicial (por ejemplo, si pones -5 se tomará como 5m/s hacia abajo. Si pones 0 se toma como caída libre. Si pones 5 se tomará como lanzamiento hacia arriba)
+2026-03-12 08:38:40 INFO  org.fisica.caidaLibre.CaidaLibre:21 - La gravedad se tomará como 9,80665m/s². ¿Quieres cambiarlo? [s/n]
+2026-03-12 08:38:42 INFO  org.fisica.caidaLibre.CaidaLibre:56 - La altura máxima alcanzada es de: 101.27464526622241 m.
+2026-03-12 08:38:42 INFO  org.fisica.caidaLibre.CaidaLibre:60 - El tiempo de subida es de: 0.5098581064889641 s.
+2026-03-12 08:38:42 INFO  org.fisica.caidaLibre.CaidaLibre:64 - La velocidad final del objeto al tocar el suelo es de: 44.568262250170804 m/s.
+2026-03-12 08:38:42 INFO  org.fisica.caidaLibre.CaidaLibre:68 - El tiempo total de vuelo es de: 5.054556066564097 s.
+2026-03-12 08:39:05 INFO  org.fisica.caidaLibre.CaidaLibre:12 - Introduce la altura del objeto (por ejemplo, si pones '100', se tomará que cae desde 100m a 0m)
+2026-03-12 08:39:07 INFO  org.fisica.caidaLibre.CaidaLibre:16 - Introduce la velocidad inicial (por ejemplo, si pones -5 se tomará como 5m/s hacia abajo. Si pones 0 se toma como caída libre. Si pones 5 se tomará como lanzamiento hacia arriba)
+2026-03-12 08:39:09 INFO  org.fisica.caidaLibre.CaidaLibre:21 - La gravedad se tomará como 9,80665m/s². ¿Quieres cambiarlo? [s/n]
+2026-03-12 08:39:12 INFO  org.fisica.caidaLibre.CaidaLibre:36 - La velocidad final del objeto es de: 434.30618195820784m/s.
+2026-03-12 08:39:12 INFO  org.fisica.caidaLibre.CaidaLibre:40 - El tiempo de caída es de: 4.5160075575178755s.
+2026-03-12 08:40:14 INFO  org.fisica.caidaLibre.CaidaLibre:12 - Introduce la altura del objeto (por ejemplo, si pones '100', se tomará que cae desde 100m a 0m)
+2026-03-12 08:40:17 INFO  org.fisica.caidaLibre.CaidaLibre:16 - Introduce la velocidad inicial (por ejemplo, si pones -5 se tomará como 5m/s hacia abajo. Si pones 0 se toma como caída libre. Si pones 5 se tomará como lanzamiento hacia arriba)
+2026-03-12 08:40:18 INFO  org.fisica.caidaLibre.CaidaLibre:21 - La gravedad se tomará como 9,80665m/s². ¿Quieres cambiarlo? [s/n]
+2026-03-12 08:40:19 INFO  org.fisica.caidaLibre.CaidaLibre:36 - El tiempo de caída es de: 4.5160075575178755s.
+2026-03-12 08:40:19 INFO  org.fisica.caidaLibre.CaidaLibre:40 - La velocidad final del objeto es de: 44.28690551393267m/s.
+2026-03-12 08:48:18 INFO  org.fisica.pendulos.PenduloSimple:12 - Péndulo simple
+2026-03-12 08:48:18 INFO  org.fisica.pendulos.PenduloSimple:14 - Introduce la masa en kilogramos:
+2026-03-12 08:48:20 INFO  org.fisica.pendulos.PenduloSimple:18 - ¿Hay resistencia con el aire?
+2026-03-12 08:48:27 INFO  org.fisica.pendulos.PenduloSimple:12 - Péndulo simple
+2026-03-12 08:48:27 INFO  org.fisica.pendulos.PenduloSimple:14 - Introduce la masa en kilogramos:
+2026-03-12 08:48:30 INFO  org.fisica.pendulos.PenduloSimple:18 - ¿Hay resistencia con el aire?
+2026-03-12 08:48:35 INFO  org.fisica.pendulos.PenduloSimple:12 - Péndulo simple
+2026-03-12 08:48:35 INFO  org.fisica.pendulos.PenduloSimple:14 - Introduce la masa en kilogramos:
+2026-03-12 08:48:36 INFO  org.fisica.pendulos.PenduloSimple:18 - ¿Hay resistencia con el aire?
+2026-03-12 08:48:41 INFO  org.fisica.pendulos.PenduloSimple:12 - Péndulo simple
+2026-03-12 08:48:41 INFO  org.fisica.pendulos.PenduloSimple:14 - Introduce la masa en kilogramos:
+2026-03-12 08:48:44 INFO  org.fisica.pendulos.PenduloSimple:18 - ¿Hay resistencia con el aire?
+2026-03-12 08:48:48 INFO  org.fisica.pendulos.PenduloSimple:12 - Péndulo simple
+2026-03-12 08:48:48 INFO  org.fisica.pendulos.PenduloSimple:14 - Introduce la masa en kilogramos:
+2026-03-12 08:48:51 INFO  org.fisica.pendulos.PenduloSimple:18 - ¿Hay resistencia con el aire?
+2026-03-12 09:07:17 INFO  org.fisica.pendulos.PenduloSimple:12 - Péndulo simple
+2026-03-12 09:07:17 INFO  org.fisica.pendulos.PenduloSimple:14 - Introduce la masa en kilogramos:
+2026-03-12 09:07:21 INFO  org.fisica.pendulos.PenduloSimple:18 - Introduce la longitud del hilo:
+2026-03-12 09:07:27 INFO  org.fisica.pendulos.PenduloSimple:22 - ¿Hay resistencia con el aire? [true/false]
+2026-03-12 09:07:56 INFO  org.fisica.pendulos.PenduloSimple:12 - Péndulo simple
+2026-03-12 09:07:56 INFO  org.fisica.pendulos.PenduloSimple:14 - Introduce la masa (en kilogramos):
+2026-03-12 09:08:00 INFO  org.fisica.pendulos.PenduloSimple:18 - Introduce la longitud del hilo (en metros):
+2026-03-12 09:10:37 INFO  org.fisica.pendulos.PenduloSimple:22 - ¿Hay resistencia con el aire? [true/false]
+2026-03-12 09:10:39 INFO  org.fisica.pendulos.PenduloSimple:26 - Introduce ángulo inicial (en radianes):
+2026-03-12 09:15:38 INFO  org.fisica.pendulos.PenduloSimple:12 - Péndulo simple
+2026-03-12 09:15:38 INFO  org.fisica.pendulos.PenduloSimple:14 - Introduce la masa (en kilogramos):
+2026-03-12 09:15:41 INFO  org.fisica.pendulos.PenduloSimple:18 - Introduce la longitud del hilo (en metros):
+2026-03-12 09:15:43 INFO  org.fisica.pendulos.PenduloSimple:22 - ¿Hay resistencia con el aire? [true/false]
+2026-03-12 09:15:45 INFO  org.fisica.pendulos.PenduloSimple:26 - Introduce ángulo inicial (en radianes):
+2026-03-12 09:15:51 INFO  org.fisica.pendulos.PenduloSimple:31 - La gravedad se tomará como 9,80665m/s². ¿Quieres cambiarlo? [s/n]
+2026-03-12 09:15:53 INFO  org.fisica.pendulos.PenduloSimple:40 - Dime cuántos segundos dura la simulación (comenzando en el instante t=0s):
+2026-03-12 09:15:56 INFO  org.fisica.pendulos.PenduloSimple:47 - Simulación (t, ángulo[rad], velocidad angular[rad/s], momento angular[kg·m²/s]):
+2026-03-12 09:18:25 INFO  org.fisica.pendulos.PenduloSimple:12 - Péndulo simple
+2026-03-12 09:18:25 INFO  org.fisica.pendulos.PenduloSimple:14 - Introduce la masa (en kilogramos):
+2026-03-12 09:18:29 INFO  org.fisica.pendulos.PenduloSimple:18 - Introduce la longitud del hilo (en metros):
+2026-03-12 09:18:32 INFO  org.fisica.pendulos.PenduloSimple:22 - ¿Hay resistencia con el aire? [true/false]
+2026-03-12 09:18:33 INFO  org.fisica.pendulos.PenduloSimple:26 - Introduce ángulo inicial (en radianes):
+2026-03-12 09:18:40 INFO  org.fisica.pendulos.PenduloSimple:31 - La gravedad se tomará como 9,80665m/s². ¿Quieres cambiarlo? [s/n]
+2026-03-12 09:18:42 INFO  org.fisica.pendulos.PenduloSimple:40 - Dime cuántos segundos dura la simulación (comenzando en el instante t=0s):
+2026-03-12 09:18:44 INFO  org.fisica.pendulos.PenduloSimple:47 - Simulación (t, ángulo[rad], velocidad angular[rad/s], momento angular[kg·m²/s]):
+2026-03-12 09:18:55 INFO  org.fisica.pendulos.PenduloSimple:12 - Péndulo simple
+2026-03-12 09:18:55 INFO  org.fisica.pendulos.PenduloSimple:14 - Introduce la masa (en kilogramos):
+2026-03-12 09:19:01 INFO  org.fisica.pendulos.PenduloSimple:18 - Introduce la longitud del hilo (en metros):
+2026-03-12 09:19:02 INFO  org.fisica.pendulos.PenduloSimple:22 - ¿Hay resistencia con el aire? [true/false]
+2026-03-12 09:19:04 INFO  org.fisica.pendulos.PenduloSimple:26 - Introduce ángulo inicial (en radianes):
+2026-03-12 09:19:07 INFO  org.fisica.pendulos.PenduloSimple:31 - La gravedad se tomará como 9,80665m/s². ¿Quieres cambiarlo? [s/n]
+2026-03-12 09:19:09 INFO  org.fisica.pendulos.PenduloSimple:40 - Dime cuántos segundos dura la simulación (comenzando en el instante t=0s):
+2026-03-12 09:19:11 INFO  org.fisica.pendulos.PenduloSimple:47 - Simulación (t, ángulo[rad], velocidad angular[rad/s], momento angular[kg·m²/s]):
+2026-03-12 09:21:27 INFO  org.fisica.pendulos.PenduloSimple:12 - Péndulo simple
+2026-03-12 09:21:27 INFO  org.fisica.pendulos.PenduloSimple:14 - Introduce la masa (en kilogramos):
+2026-03-12 09:21:34 INFO  org.fisica.pendulos.PenduloSimple:18 - Introduce la longitud del hilo (en metros):
+2026-03-12 09:21:36 INFO  org.fisica.pendulos.PenduloSimple:22 - ¿Hay resistencia con el aire? [true/false]
+2026-03-12 09:21:39 INFO  org.fisica.pendulos.PenduloSimple:26 - Introduce ángulo inicial (en radianes):
+2026-03-12 09:21:42 INFO  org.fisica.pendulos.PenduloSimple:31 - La gravedad se tomará como 9,80665m/s². ¿Quieres cambiarlo? [s/n]
+2026-03-12 09:21:44 INFO  org.fisica.pendulos.PenduloSimple:40 - Dime cuántos segundos dura la simulación (comenzando en el instante t=0s):
+2026-03-12 09:21:46 INFO  org.fisica.pendulos.PenduloSimple:52 - Simulación (t, ángulo[rad], velocidad angular[rad/s], momento angular[kg·m²/s]):
