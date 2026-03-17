@@ -6,9 +6,74 @@ import java.util.Scanner;
 
 @Log4j
 public class PenduloSimple { //pendulo simple
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    public static void execute(Scanner scanner) {
 
+        Result result = getResult(scanner);
+
+        // omega:
+        double omega = Math.sqrt(result.gravity() / result.length());
+
+        if (!result.hasFriction()){
+            log.info("Simulación (t, ángulo[rad], velocidad angular[rad/s], momento angular[kg·m²/s]):");
+
+            for (double t = 0; t <= result.maxTime(); t += 0.05) {
+                // posición angular
+                double angle = result.initialAngle() * Math.cos(omega * t);
+
+                // velocidad angular
+                double angularVelocity = -result.initialAngle() * omega * Math.sin(omega * t);
+
+                // momento angular
+                double L_ang = result.mass() * result.length() * result.length() * angularVelocity;
+
+                log.info(String.format(
+                        "t=%.05fs  θ=%.4f rad  ω=%.4f rad/s  L=%.4f kg·m²/s",
+                        t, angle, angularVelocity, L_ang
+                ));
+            }
+        } else {
+
+            log.info("Introduce coeficiente de rozamiento (gamma, por ejemplo 0.01 leve, 0.1 moderado):");
+            double gamma = scanner.nextDouble();
+            scanner.nextLine();
+
+            omega = Math.sqrt(result.gravity() / result.length());
+
+            //comprobar que no haya sobreamortiguamiento
+            if (gamma >= omega) {
+                log.warn("El sistema está sobreamortiguado (no oscila). Prueba con un gamma más pequeño.");
+                return;
+            }
+
+            double omegaPrime = Math.sqrt(omega * omega - gamma * gamma);
+
+            log.info("Simulación con rozamiento:");
+            log.info("t, θ[rad], ω[rad/s], L[kg·m²/s]");
+
+            for (double t = 0; t <= result.maxTime(); t += 0.05) {
+
+                // ángulo con amortiguamiento
+                double angle = result.initialAngle() * Math.exp(-gamma * t) * Math.cos(omegaPrime * t);
+
+                // velocidad angular (derivada correcta)
+                double angularVelocity =
+                        result.initialAngle() * Math.exp(-gamma * t) *
+                                (-gamma * Math.cos(omegaPrime * t) - omegaPrime * Math.sin(omegaPrime * t));
+
+                // momento angular
+                double L_ang = result.mass() * result.length() * result.length() * angularVelocity;
+
+                log.info(String.format(
+                        "t=%.05fs  θ=%.4f rad  ω=%.4f rad/s  L=%.4f kg·m²/s",
+                        t, angle, angularVelocity, L_ang
+                ));
+            }
+        }
+    }
+
+
+
+    private static Result getResult(Scanner scanner) {
         log.info("Péndulo simple");
 
         log.info("Introduce la masa (en kilogramos):");
@@ -40,65 +105,10 @@ public class PenduloSimple { //pendulo simple
         log.info("Dime cuántos segundos dura la simulación (comenzando en el instante t=0s):");
         double maxTime = scanner.nextDouble();
         scanner.nextLine();
+        Result result = new Result(mass, length, hasFriction, initialAngle, gravity, maxTime);
+        return result;
+    }
 
-        // omega:
-        double omega = Math.sqrt(gravity / length);
-
-        if (!hasFriction){
-            log.info("Simulación (t, ángulo[rad], velocidad angular[rad/s], momento angular[kg·m²/s]):");
-
-            for (double t = 0; t <= maxTime; t += 0.05) {
-                // posición angular
-                double angle = initialAngle * Math.cos(omega * t);
-
-                // velocidad angular
-                double angularVelocity = -initialAngle * omega * Math.sin(omega * t);
-
-                // momento angular
-                double L_ang = mass * length * length * angularVelocity;
-
-                log.info(String.format(
-                        "t=%.05fs  θ=%.4f rad  ω=%.4f rad/s  L=%.4f kg·m²/s",
-                        t, angle, angularVelocity, L_ang
-                ));
-            }
-        } else {
-
-            log.info("Introduce coeficiente de rozamiento (gamma, por ejemplo 0.01 leve, 0.1 moderado):");
-            double gamma = scanner.nextDouble();
-            scanner.nextLine();
-
-            omega = Math.sqrt(gravity / length);
-
-            //comprobar que no haya sobreamortiguamiento
-            if (gamma >= omega) {
-                log.warn("El sistema está sobreamortiguado (no oscila). Prueba con un gamma más pequeño.");
-                return;
-            }
-
-            double omegaPrime = Math.sqrt(omega * omega - gamma * gamma);
-
-            log.info("Simulación con rozamiento:");
-            log.info("t, θ[rad], ω[rad/s], L[kg·m²/s]");
-
-            for (double t = 0; t <= maxTime; t += 0.05) {
-
-                // ángulo con amortiguamiento
-                double angle = initialAngle * Math.exp(-gamma * t) * Math.cos(omegaPrime * t);
-
-                // velocidad angular (derivada correcta)
-                double angularVelocity =
-                        initialAngle * Math.exp(-gamma * t) *
-                                (-gamma * Math.cos(omegaPrime * t) - omegaPrime * Math.sin(omegaPrime * t));
-
-                // momento angular
-                double L_ang = mass * length * length * angularVelocity;
-
-                log.info(String.format(
-                        "t=%.05fs  θ=%.4f rad  ω=%.4f rad/s  L=%.4f kg·m²/s",
-                        t, angle, angularVelocity, L_ang
-                ));
-            }
-        }
+    private record Result(double mass, double length, boolean hasFriction, double initialAngle, double gravity, double maxTime) {
     }
 }
