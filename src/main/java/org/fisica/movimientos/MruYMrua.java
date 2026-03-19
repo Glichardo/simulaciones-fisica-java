@@ -13,7 +13,7 @@ public class MruYMrua {
 
         String option = scanner.nextLine();
 
-        if (option.equals("MRU") || option.equals("mru")){
+        if (option.equalsIgnoreCase("mru")){
 
             MruVariables result = getMruVariables(scanner);
 
@@ -26,7 +26,7 @@ public class MruYMrua {
             }
 
 
-        } else if (option.equals("MRUA") || option.equals("mrua")) {
+        } else if (option.equalsIgnoreCase("MRUA")) {
             MruaVariables result = getMruaVariables(scanner);
 
             log.info("Simulación MRUA (t, x[m], v[m/s], a[m/s²]):");
