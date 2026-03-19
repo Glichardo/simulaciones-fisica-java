@@ -1,6 +1,6 @@
 # Simulaciones físicas
 
-> **Códigos sencillos en Java para simular caídas, péndulos y más.**   
+> **"Si no está hecho en Java, entonces es una mierda." -Brook Taylor, probablemente**   
 
 ---
 
